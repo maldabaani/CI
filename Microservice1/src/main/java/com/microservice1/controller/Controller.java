@@ -42,7 +42,7 @@ public class Controller {
 		System.out.println(response);
 		System.out.println(response.getBody());
 		
-		return response.toString();
+		return response!=null?response.getBody():null;
 	}
 	
 	private static HttpEntity<?> getHeaders() throws IOException {
